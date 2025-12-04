@@ -1,0 +1,51 @@
+name: try1flutter
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  permission_handler: ^12.0.1
+  speech_to_text: ^7.0.0 
+  http: ^1.2.1
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  # The package dependency must be defined here:
+  flutter_launcher_icons: ^0.14.4 
+
+# --- FLUTTER LAUNCHER ICONS CONFIGURATION SECTION ---
+# This configuration block must be at the top level, 
+# not indented under dependencies or dev_dependencies.
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/image/x.png" # Path to your 512x512 logo image
+  min_sdk_android: 21
+
+
+# --- THE FLUTTER SECTION ---
+flutter:
+  uses-material-design: true
+
+  # Ensure you are using 'images' or 'image' consistently. 
+  # I've used 'assets/images/x.png' based on your configuration above.
+  assets:
+    - assets/image/logo.png
+    - assets/image/x.png
+  fonts:
+    - family: Hafs
+      fonts:
+        - asset: assets/fonts/hafs.ttf
+
+    - family: Circular
+      fonts:
+        - asset: assets/fonts/Circular.otf
